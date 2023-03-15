@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { StrictMode, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { Account, Client, Databases } from "appwrite";
 
@@ -84,12 +84,12 @@ const Radio = (props) => {
 };
 const App = () => {
   return (
-    <div>
+    <StrictMode>
       <Radio name="nova-soul" />
       <Radio name="nova-la-nuit" />
       <Radio name="nova-classics" />
       <Radio name="nouvo-nova" />
-    </div>
+    </StrictMode>
   );
 };
 
